@@ -1,4 +1,4 @@
-let menuLink = '<details>'+
+let menuLink2 = '<details>'+
     '<summary class="flex float-left"><span class="material-icons sets">home</span><div class="link-group">Geral</div></summary>'+
     '<div id="grouplink01"></div>'+                                
     '</details>'+
@@ -68,7 +68,7 @@ let menuLink = '<details>'+
     '</details>';
 
 
-    let menuLink2 = '<details>'+
+    let menuLink = '<details>'+
     '<summary class="flex float-left"><span class="material-icons sets">home</span><div class="link-group">Geral</div></summary>'+
     '<div id="grouplink1"></div>'+                                
     '</details>'+
