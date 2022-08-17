@@ -138,40 +138,56 @@ let menuLink2 = '<details>'+
     '</details>';
 
 let way = "";
-    navLinks();
-    info();
+let way1 = "";
 
 function link1(){
+    way1 = "";
     way = "../";
-    navLinks();
-    info();
-}
-
-function link2(){
-    way = "../../";
-    navLinks();
-    info();
-}
-
-function link3(){
-    way = "../../../";
-    navLinks();
-    info();
-}
-
-function link4(){
-    way = "../../../../";
-    navLinks();
-    info();
-}
-
-function link0(){
-    way = "";
     menu();
     navLinks();
     navLinks2();
     info();
-    
+    infoFooter();
+}
+
+function link2(){
+    way1 = "../";
+    way = "../../";
+    menu();
+    navLinks();
+    navLinks2();
+    info();
+    infoFooter();
+}
+
+function link3(){
+    way1 = "../../";
+    way = "../../../";
+    menu();
+    navLinks();
+    navLinks2();
+    info();
+    infoFooter();
+}
+
+function link4(){
+    way1 = "../../../";
+    way = "../../../../";
+    menu();
+    navLinks();
+    navLinks2();
+    info();
+    infoFooter();
+}
+
+function link0(){
+    way1 = "";
+    way = "src/view/";
+    menu();
+    navLinks();
+    navLinks2();
+    info();
+    infoFooter();
 }
 
 // function menu(){
@@ -196,182 +212,182 @@ function closeMenu(){
 
 function navLinks() {
     document.getElementById('grouplink1').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Início</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Comunidade</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Quem somos</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Material</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Mapa do site</a></div>';
+    '<div class="link-details"><a href="../../../'+way1+'index.html" class="nav-link-content">Início</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Comunidade</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Quem somos</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Material</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Mapa do site</a></div>';
 
     document.getElementById('grouplink2').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink3').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content grande prara cacede</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content grande prara cacede</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink4').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink5').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink6').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink7').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink8').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink9').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink10').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink11').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink12').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink13').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink14').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink15').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink16').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink17').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
 }
 
 
 function navLinks2() {
     document.getElementById('grouplink01').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Início</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Comunidade</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Quem somos</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Material</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Mapa do site</a></div>';
+    '<div class="link-details"><a href="../../../'+way1+'index.html" class="nav-link-content">Início</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Comunidade</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Quem somos</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Material</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Mapa do site</a></div>';
 
     document.getElementById('grouplink02').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content grande para cacete</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content grande para cacete</a></div>';
 
     document.getElementById('grouplink03').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink04').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink05').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink06').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink07').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink08').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink09').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink010').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink011').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink012').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink013').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink014').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink015').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink016').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
     document.getElementById('grouplink017').innerHTML = ''+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>'+
-    '<div class="link-details"><a href="#" class="nav-link-content">Link content</a></div>';
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>';
 
 }
 
@@ -388,4 +404,16 @@ function info() {
     document.getElementById('contacttel').innerHTML = '<a class="tellink" href="tel:XXXXXXXXX">(XX) X.XXXX-XXXX</a><br>';
 
     document.getElementById('andress').innerHTML = 'Rua Exemplo Nº XXX, Bairro Exemplo, Cidade - UF - CEP: XXXXX-XXX.';
+}
+
+function infoFooter(){
+    document.getElementById('info-footer').innerHTML = ''+
+        '<a href="'+way+'article/modelo.html">Sobre</a><br>'+
+        '<a href="'+way+'article/modelo.html">Material</a><br>'+
+        '<a href="'+way+'article/modelo.html">Professores</a><br>'+
+        '<a href="'+way+'article/modelo.html">Fale conosco</a><br>'+
+        '<a href="'+way+'article/modelo.html">Faça parte</a><br>'+
+        '<a href="'+way+'article/modelo.html">Ajuda</a><br>'+
+        '<a href="'+way+'article/modelo.html">Mapa do site</a><br>'+
+        '<a href="'+way+'article/modelo.html">Perguntas Frequentes</a><br></br>';
 }
