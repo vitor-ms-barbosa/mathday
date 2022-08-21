@@ -139,54 +139,89 @@ let menuLink2 = '<details>'+
 
 let way = "";
 let way1 = "";
+let wayPidx = "";
 
-function link1(){
+function link(){
     way1 = "";
-    way = "../";
+    way = "";
+    wayPidx = "../../";
+    wayImg = "../../";
+    logo();
     menu();
     navLinks();
     navLinks2();
     info();
+    buttonClass()
+    infoFooter();
+}
+
+function link1(){
+    way1 = "";
+    way = "../";
+    wayPidx = "../../../";
+    wayImg = "../../../";
+    logo();
+    menu();
+    navLinks();
+    navLinks2();
+    info();
+    buttonClass()
     infoFooter();
 }
 
 function link2(){
     way1 = "../";
     way = "../../";
+    wayPidx = "../../../";
+    wayImg = "../../../../";
+    logo();
     menu();
     navLinks();
     navLinks2();
     info();
+    buttonClass()
     infoFooter();
 }
 
 function link3(){
     way1 = "../../";
     way = "../../../";
+    wayPidx = "../../../";
+    wayImg = "../../../../../";
+    logo();
     menu();
     navLinks();
     navLinks2();
     info();
+    buttonClass()
     infoFooter();
 }
 
 function link4(){
     way1 = "../../../";
     way = "../../../../";
+    wayPidx = "../../../";
+    wayImg = "../../../../../../";
+    logo();
     menu();
     navLinks();
     navLinks2();
     info();
+    buttonClass()
     infoFooter();
 }
 
 function link0(){
     way1 = "";
     way = "src/view/";
+    wayPidx = "";
+    wayImg = "";
+    logo();
     menu();
     navLinks();
     navLinks2();
     info();
+    buttonClass()
     infoFooter();
 }
 
@@ -194,6 +229,13 @@ function link0(){
     // document.getElementById('menu').innerHTML = ''+
     
 // }
+
+function logo(){
+    document.getElementById('logo-link').innerHTML = '<a href="'+wayPidx+''+way1+'index.html">'+
+    '<img class="logo-img" src="'+wayImg+'material/img/logo/logo (2) 3.png">'+
+    '<img class="logo-img2" src="'+wayImg+'material/img/logo/logo (2) 8.png">'+
+    '</a>';
+}
 
 function menu(){
     document.getElementById('menu').innerHTML = menuLink;
@@ -212,11 +254,11 @@ function closeMenu(){
 
 function navLinks() {
     document.getElementById('grouplink1').innerHTML = ''+
-    '<div class="link-details"><a href="../../../'+way1+'index.html" class="nav-link-content">Início</a></div>'+
-    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Comunidade</a></div>'+
-    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Quem somos</a></div>'+
+    '<div class="link-details"><a href="'+wayPidx+''+way1+'index.html" class="nav-link-content">Início</a></div>'+
+    '<div class="link-details"><a href="'+way+'community/community.html" class="nav-link-content">Comunidade</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Mapa do site</a></div>'+
     '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Material</a></div>'+
-    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Mapa do site</a></div>';
+    '<div class="link-details"><a href="'+way+'about/about.html" class="nav-link-content">Quem somos</a></div>';
 
     document.getElementById('grouplink2').innerHTML = ''+
     '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
@@ -304,10 +346,10 @@ function navLinks() {
 function navLinks2() {
     document.getElementById('grouplink01').innerHTML = ''+
     '<div class="link-details"><a href="../../../'+way1+'index.html" class="nav-link-content">Início</a></div>'+
-    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Comunidade</a></div>'+
-    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Quem somos</a></div>'+
+    '<div class="link-details"><a href="'+way+'community/community.html" class="nav-link-content">Comunidade</a></div>'+
+    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Mapa do site</a></div>'+
     '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Material</a></div>'+
-    '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Mapa do site</a></div>';
+    '<div class="link-details"><a href="'+way+'about/about.html" class="nav-link-content">Quem somos</a></div>';
 
     document.getElementById('grouplink02').innerHTML = ''+
     '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Link content</a></div>'+
@@ -403,7 +445,11 @@ function info() {
 
     document.getElementById('contacttel').innerHTML = '<a class="tellink" href="tel:XXXXXXXXX">(XX) X.XXXX-XXXX</a><br>';
 
-    document.getElementById('andress').innerHTML = 'Rua Exemplo Nº XXX, Bairro Exemplo, Cidade - UF - CEP: XXXXX-XXX.';
+    document.getElementById('andress').innerHTML = 'Rua Exemplo Nº XXX, Bairro Exemplo, Brasília - DF, Brasil - CEP: XXXXX-XXX.';
+}
+
+function buttonClass(){
+    document.getElementById('class-button').innerHTML = '<a class="linkclass" href="'+way+'article/modelo.html">Agendar aula</a>';
 }
 
 function infoFooter(){

@@ -261,6 +261,33 @@ body{
     height: 100px;
 }
 
+.index-text{
+    display: block;
+    margin: 0 auto;
+    max-width: 95%;
+    margin-left: 5%;
+    float: left;
+    padding: 0 auto;
+}
+
+.index-text a{
+    display: inline-block;
+    font-size: 11pt;
+    width: 100%;
+    color: #00C2CB;
+    text-decoration: none;
+    border-left: 5px solid #00C2CB;
+    margin: 0 auto;
+    float: left;
+    padding: 0.3rem;
+    transition: 0.5s all;
+}
+
+.index-text a:hover{
+    color: #168a91;
+    border-left: 5px solid #168a91;
+}
+
 .topic-content{
     margin: 1rem 0rem;
     width: 95%;
@@ -269,6 +296,7 @@ body{
 }
 
 article p{
+    display: inline-block;
     margin: 1rem 0rem;
     width: 95%;
     margin-left: 2%;
@@ -337,15 +365,47 @@ p.legend{
     font-size: 12pt;
     font-weight: bold;
     margin-right: 0.5rem;
+    margin-top: 1rem;
     float: left;
     transition: 0.5s all;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .button-botton:hover{
     background-color: #1da9b1;
 }
 
+.author{
+    display: inline-flex;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.ft-aut, .text-aut{
+    display: block;
+    float: left;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.ft-aut{
+    height: 50px;
+    margin-right: 1rem;
+    border: 2px solid #00C2CB;
+    border-radius: 100%;
+}
+
+.p1-aut, .formation, .ubdate-page{
+    font-size: 11pt;
+    margin: 0px;
+}
+
+.name-author{
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 0px;
+}
 /* footer */
 
 .block-footer{
@@ -358,6 +418,7 @@ p.legend{
 }
 
 .grid-footer{
+    max-width: 2000px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 2rem;

@@ -1,0 +1,25 @@
+
+
+.browser-info{
+    max-width: 90%;
+    border: 1px solid #00C2CB;
+    background-color: #00C2CB;
+}
+
+.browser-info tr{
+    width: 100%;
+}
+
+.browser-info tr td{
+    border: 1px solid #00C2CB;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0.5rem;
+    color: #00C2CB;
+}
+
+.browser-info tr th{
+    text-align: center;
+    padding: 0.5rem;
+    color: #ffffff;
+}

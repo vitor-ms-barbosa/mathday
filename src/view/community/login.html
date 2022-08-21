@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vitor Barbosa">
+    <!-- <link rel="stylesheet" type="text/css" href="../../../css/general.css"> -->
+    <link rel="stylesheet" type="text/css" href="../../../css/form.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="../../../material/img/logo/logo (2) 5.png">
+    <script src="../../../js/general-link.js"></script>
+    <title>Math Day | Login</title>
+</head>
+<body onload="link1()">
+    <div class="body">
+        <header>
+            <div class="logo-form">
+                <figure id="logo-link">
+                </figure>
+            </div>
+        </header>
+        
+        <div class="body-div">
+            <main>
+                <form>
+                    <div class="form-div">
+                        <span class="material-icons login-logo">person</span><br>
+                        <fieldset>                            
+                            <Legend>Faça login para acessar o recurso</Legend>
+                            <br>
+                            <br>
+                            <label for="emailuserr">E-Mail<span class="required">*</span></label><br>
+                            <input name="emailuseremail" class="input-email" id="emailuserr" type="email" required placeholder="exemplo@exemplo.com"><br>
+                            <br>
+                            <label for="passuser">Senha<span class="required">*</span></label><br>
+                            <input name="passworduser" class="input-pass" id="passuser" type="password" required placeholder="Senha"><br><br>
+                            <br>
+                            <div>
+                                <button class="submit-login" type="submit">Registrar</button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </main>
+        </div>
+        <div>
+            <div>
+                <footer>
+                    <div class="block-footer-register">                            
+                        <div class="copy-div">
+                            Math Day &copy; <span id="copyyear"></span>. Todos os direitos reservados.
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <button title="Voltar" onclick="window.history.back()" class="exit"><span class="material-icons">reply</span></button>
+</body>
+</html>

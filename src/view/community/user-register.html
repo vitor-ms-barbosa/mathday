@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vitor Barbosa">
+    <!-- <link rel="stylesheet" type="text/css" href="../../../css/general.css"> -->
+    <link rel="stylesheet" type="text/css" href="../../../css/form.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="../../../material/img/logo/logo (2) 5.png">
+    <script src="../../../js/general-link.js"></script>
+    <title>Math Day | Registro de usuário</title>
+</head>
+<body onload="link1()">
+    <div class="body">
+        <header>
+            <div class="logo-form">
+                <figure id="logo-link">
+                </figure>
+            </div>
+        </header>
+        
+        <div class="body-div">
+            <main>
+                <form>
+                    <div class="form-div">
+                        <fieldset>
+                            <Legend>Registro de usuário</Legend>
+                            <br>
+                            <br>
+                            <label for="nameuser" id="">Nome/Usuário<span class="required">*</span></label><br>
+                            <input name="nameusertxt" class="input-txt" id="nameuser" type="text" required placeholder="Nome/Usuário"><br>
+                            <br>
+                            <label for="emailuserr">E-Mail<span class="required">*</span></label><br>
+                            <input name="emailuseremail" class="input-email" id="emailuserr" type="email" required placeholder="exemplo@exemplo.com"><br>
+                            <br>
+                            <label for="passuser">Senha<span class="required">*</span></label><br>
+                            <input name="passworduser" class="input-pass" id="passuser" type="password" required placeholder="Senha"><br>
+                            <br>
+                            <label for="passconfuser">Confirme a senha<span class="required">*</span></label><br>
+                            <input name="passuserconf" class="input-pass" id="passconfuser" type="password" required placeholder="Confirmação da senha"><br>
+                            <br>
+                            <input type="checkbox" name="terms" id="termtrue" class="userterms" required>
+                            <label class="term" for="termtrue">Li e concordo com os <a href="#">Termos de uso de dados</a> e <a href="#">Política de privacidade</a> do Math Day.<span class="required">*</span></label>
+                            <br>
+                            <br>
+                            <div class="flex">
+                                <button class="reset" type="reset">limpar</button>
+                                <button class="submit" type="submit">Registrar</button>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </main>
+        </div>
+        <div>
+            <div>
+                <footer>
+                    <div class="block-footer-register">                            
+                        <div class="copy-div">
+                            Math Day &copy; <span id="copyyear"></span>. Todos os direitos reservados.
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <button title="Voltar" onclick="window.history.back()" class="exit"><span class="material-icons">reply</span></button>
+</body>
+</html>

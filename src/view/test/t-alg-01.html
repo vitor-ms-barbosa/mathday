@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="kaywords" content="math day, metmática, teste">
+    <meta name="author" content="Vitor Barbosa">
+    <link rel="stylesheet" type="text/css" href="../../../css/general.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/test.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="../../../material/img/logo/logo (2) 5.png">
+    <script src="../../../js/general-link.js"></script>
+    <script src="../../../js/test/test-alg-01.js"></script>
+    <title>Math Day | Teste de Algebra 01</title>
+</head>
+<body onload="link1()">
+    <div class="body-test">
+        <header>
+            <div id="header-test" class="body-div-header-test">
+                <div class="logo">
+                    <figure id="logo-link">
+                    </figure>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div>
+                <div id="contPage" class="cont">Questão <span id="idPage"></span> de 10</div>
+                <div id="timer" class="timer">
+                    <span id="contador">00:00:00</span><span class="material-icons">timer</span>
+                </div><br><br>
+                <form>
+                    <fieldset>
+                        <figure  id="logo-test"><img src="../../../material/img/logo/logo (2) 8.png"></figure>
+                        <div id="content-test">
+                            <h1>Título do Questionário</h1>
+                            <br>
+                            <strong>Número de questões:</strong> 10 questões<br>
+                            <strong>Mínimo para aprovação:</strong> 70% corretas<br>
+                            <strong>Tempo limite:</strong> Não há<br>
+                            <br>
+                            <br>
+                            <h2>Orientações:</h2>
+                            <ul>
+                                <li>Responda a todas as questões apresentadas para finalizar o teste;</li>
+                                <li>Todas as questões são objetivas;</li>
+                                <li>Ao selecionar uma opção, clique em "Avançar" para ir para a próxima questão;</li>
+                                <li>Não é possível voltar em questões anteriores;</li>
+                                <li>Se sair ou atualizar a página durante o questionário, suas respostas serão perdidas.</li>
+                            </ul>
+                            <br>
+                            <br>
+                            <p>Boa sorte ;)</p>
+                            <br>
+                            <br>
+                            <button class="start-test" onclick="startTest()">Iniciar teste</button>
+                        </div>
+                        <input id="reset" class="reset" type="reset" onclick="offNext()" value="Limpar seleção">
+                    </fieldset>
+                </form>
+                <div class="btn-test">
+                    <button id="bnt-exit" class="exit" onclick="pause()">Sair</button>
+                    <button id="tex-bnt" class="next" onclick="next()">Avançar</button>
+                </div>
+            </div>
+        </main>
+        <div>
+            <div>
+                <footer>
+                    <div>    
+                        <div class="copy-div-test">
+                            Math Day &copy; <span id="copyyear"></span>. Todos os direitos reservados.
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div id="window">
+        <div id="form-print">
+            <span id="name-icon" class="material-icons">support_agent</span>
+            <form id="form-name">
+                <label for="name-user">Por favor, informe o nome de quem responderá o teste:</label><br>
+                <input type="text" id="name-user" name="nome" required placeholder="Nome Sobrenome">
+                <button class="submit-name" type="submit" >Registrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="../../../js/jquery-3.6.0.js"></script>
+</html>
