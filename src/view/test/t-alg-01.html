@@ -81,11 +81,13 @@
     <div id="window">
         <div id="form-print">
             <span id="name-icon" class="material-icons">support_agent</span>
-            <form id="form-name">
-                <label for="name-user">Por favor, informe o nome de quem responderá o teste:</label><br>
-                <input type="text" id="name-user" name="nome" required placeholder="Nome Sobrenome">
-                <button class="submit-name" type="submit" >Registrar</button>
-            </form>
+            <div id="form-name">
+                <form method="post">
+                    <label for="name-user">Por favor, informe o nome de quem responderá o teste:</label><br>
+                    <input onblur="formTest()" type="text" id="name-user" name="nome" placeholder="Nome Sobrenome">
+                </form>
+                <button id="submit-name-btn" class="submit-name" onclick="closeWindow()">Registrar</button>
+            </div>
         </div>
     </div>
 </body>

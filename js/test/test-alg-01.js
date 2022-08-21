@@ -212,12 +212,29 @@ function timer(){
 
 // imprimir
 
-function openWindow(){
+function openPrintWindow(){
     document.getElementById('window').style.display = 'block';
+    
+    document.getElementById('window').innerHTML = '<div id="form-print"><span id="name-icon" class="material-icons">support_agent</span><div id="form-name"><label for="name-user">'+nome+', ao imprimir, a sessão será fechada, suas respostas apagadas e o teste reiniciado assim que a impressão for gerada. Deseja continuar com o processo de impressão?</label><br><button class="submit-name" onclick="closeWindow()">Não</button><button class="submit-name" onclick="printWindow()">Sim</button></div></div>';
 }
 
 function closeWindow(){
     document.getElementById('window').style.display = 'none';
 }
 
+function printWindow(){
+    closeWindow();
+    window.print();
+}
+
 // Formulário
+
+function formTest(){
+    nome = document.querySelector("#name-user").value;
+
+    if(nome == ''){
+        alert('Por favor, preencha o campo para poder fazer o teste.');
+    }else if(nome != ''){
+        document.getElementById('submit-name-btn').style.display = 'inline-block';
+    }
+}
