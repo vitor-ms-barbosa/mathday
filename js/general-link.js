@@ -346,7 +346,7 @@ function navLinks() {
 
 function navLinks2() {
     document.getElementById('grouplink01').innerHTML = ''+
-    '<div class="link-details"><a href="../../../'+way1+'index.html" class="nav-link-content">Início</a></div>'+
+    '<div class="link-details"><a href="'+wayPidx+''+way1+'index.html" class="nav-link-content">Início</a></div>'+
     '<div class="link-details"><a href="'+way+'community/community.html" class="nav-link-content">Comunidade</a></div>'+
     '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Mapa do site</a></div>'+
     '<div class="link-details"><a href="'+way+'article/modelo.html" class="nav-link-content">Material</a></div>'+
