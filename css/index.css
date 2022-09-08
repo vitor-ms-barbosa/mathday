@@ -1,0 +1,31 @@
+#s1{
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    min-height: 400px;
+}
+
+#s1 img{
+    width: 0%;
+    transition: 0.5s;
+}
+
+#s1 img .img-s1-r{
+    float: right;
+}
+
+#s1 img .img-s1-l{
+    float: left;
+}
+
+@media screen and (min-width: 1500px) {
+    #s1{
+        min-height: 600px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #s1{
+        background-image: url();
+    }
+}

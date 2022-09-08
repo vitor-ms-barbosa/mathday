@@ -1,0 +1,12 @@
+.copy{
+    width: 90%;
+    height: 100px;
+    display: inline-block;
+    font-size: 12pt;
+    color: rgb(109, 118, 122);
+    background-color: #ffffff;
+    border: 1px solid #00C2CB;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-family: 'Comfortaa', 'Arial', 'sans-serif';
+}

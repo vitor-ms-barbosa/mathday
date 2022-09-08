@@ -223,6 +223,7 @@ function link0(){
     info();
     buttonClass()
     infoFooter();
+    start();//Está chamando uma função de idx-carr.js
 }
 
 // function menu(){
